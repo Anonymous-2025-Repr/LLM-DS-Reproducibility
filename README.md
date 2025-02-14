@@ -33,7 +33,7 @@ Execute the following command, replacing the placeholders as needed:
 python -m experiments.run_experiment --dataset_name {dataset_name} --model_name {model_name} --agent_type {agent_type} --overwrite
 ```
 - {dataset_name}: Choose from `DiscoveryBench`, `QRData`, or `StatQA`
-- {model_name}: Choose from `gpt-4o`, `claude-3-5-sonnet`, or `o3-mini`
+- {model_name}: Choose from `llama-3.3`, `deepseek-r1`, `gpt-4o`, `claude-3-5-sonnet`, or `o3-mini`
 - {agent_type}: Choose from `COT`, `ROT`, `REFLEXION`, or `REACT` prompting strategies
 
 **Note:** If you want to use `REFLEXION`, please make sure that you have already obtained the evaluation results for COT.
