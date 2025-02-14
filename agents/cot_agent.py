@@ -80,7 +80,7 @@ class ChainOfThoughtAgent(BaseAgent):
         else:
             raise ValueError(f"Unsupported model type: {self.model_type}")
 
-    def run(self, sample: DataSample, agent_instruction: str = "\nLet's think step by step.", max_steps: int = 2) -> Dict[str, Any]:
+    def run(self, sample: DataSample, agent_instruction: str = "\nLet's think step by step.", max_steps: int = 2, deepseek=False) -> Dict[str, Any]:
         change_dir = os.path.dirname(sample.file_paths[0])
         current_input = prepare_prompt(sample)
         current_input.update({"agent_instruction": agent_instruction})
