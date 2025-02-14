@@ -65,11 +65,7 @@ def run_experiment(dataset_name, model_name, agent_type, overwrite):
             model_name=model_name
         )
 
-        #response = agent.run(sample, get_agent_instruction(agent_type_enum), deepseek=(model_name=='deepseek-r1'))
-        if agent_type == 'REFLEXION':
-            response = agent.run(sample, get_agent_instruction(agent_type_enum), step=results[str(i)]['steps'][0], deepseek=(model_name=='deepseek-r1'))
-        else:
-            response = agent.run(sample, get_agent_instruction(agent_type_enum), deepseek=(model_name=='deepseek-r1'))
+        response = agent.run(sample, get_agent_instruction(agent_type_enum), deepseek=(model_name=='deepseek-r1'))
         response.update({"answer": sample.answer})
         if response['final_answer'] != "No final answer reached":
             time_print(f'Sample {i} finished.')
