@@ -87,7 +87,7 @@ The above workflow and action input are not aligned for reproducibility. Please 
         else:
             raise ValueError(f"Unsupported model type: {self.model_type}")
 
-    def run(self, sample: DataSample, agent_instruction: str = "\nLet's think step by step.", max_steps: int = 3) -> Dict[str, Any]:
+    def run(self, sample: DataSample, agent_instruction: str = "\nLet's think step by step.", max_steps: int = 3, deepseek=False) -> Dict[str, Any]:
         change_dir = os.path.dirname(sample.file_paths[0])
         current_input = prepare_prompt(sample)
         current_input.update({"agent_instruction": agent_instruction})
@@ -123,8 +123,8 @@ The above workflow and action input are not aligned for reproducibility. Please 
             action_input = parsed_output.get('action_input')
             #print(action_input)
             workflow = parsed_output.get('workflow')
-            # if deepseek
-            workflow = llm_output.content[:llm_output.content.find('```python')]
+            if deepseek:
+                workflow = llm_output.content[:llm_output.content.find('```python')]
 
             # reflexion on reproducibility
             """
