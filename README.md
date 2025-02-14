@@ -56,8 +56,8 @@ The results file will contain both accuracy and reproducibility metrics.
   - `0`: Inaccurate
 2. Reproducibility:
   - `1`: Reproducible  
-  - `0`: Irreproducible (with executable code)  
-  - `-1`: Irreproducible (with non-executable code)
+  - `0`: Irreproducible (reproduciblity=0 with executable code)  
+  - `-1`: Irreproducible (reproduciblity=0 with non-executable code)
 
 ## Citation
 To be added.
