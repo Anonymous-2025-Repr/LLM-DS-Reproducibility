@@ -36,7 +36,7 @@ python -m experiments.run_experiment --dataset_name {dataset_name} --model_name 
 - {model_name}: Choose from `llama-3.3`, `deepseek-r1`, `gpt-4o`, `claude-3-5-sonnet`, or `o3-mini`
 - {agent_type}: Choose from `COT`, `ROT`, `REFLEXION`, or `REACT` prompting strategies
 
-**Note:** If you want to use `REFLEXION`, please make sure that you have already obtained the evaluation results for COT.
+**Note:** When using `REFLEXION`, please make sure that you have already obtained the evaluation results for COT.
 
 ## Evaluation
 Execute the following command, replacing the placeholders as needed:
@@ -47,7 +47,7 @@ python -m eval.run_reproducibility --dataset_name {dataset_name} --model_name {m
 - {model_name}: Choose from `llama-3.3`, `deepseek-r1`, `gpt-4o`, `claude-3-5-sonnet`, or `o3-mini`
 - {agent_type}: Choose from `COT`, `ROT`, `REFLEXION`, or `REACT` prompting strategies
 
-**Note:** If you want to use `REFLEXION`, please make sure that you have already obtained the evaluation results for COT.
+**Note:** When using `REFLEXION`, please make sure that you have already obtained the evaluation results for COT.
 
 ## Analysis
 The results file will contain both accuracy and reproducibility metrics.
