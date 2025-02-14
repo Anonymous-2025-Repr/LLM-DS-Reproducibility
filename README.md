@@ -50,7 +50,7 @@ python -m eval.run_reproducibility --dataset_name {dataset_name} --model_name {m
 **Note:** When using `REFLEXION`, please make sure that you have already obtained the evaluation results for COT.
 
 ## Analysis
-The results file will contain both accuracy and reproducibility metrics.
+The result file will contain both the accuracy and reproducibility metrics.
 1. Accuracy: 
   - `1`: Accurate  
   - `0`: Inaccurate
