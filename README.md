@@ -1,7 +1,10 @@
 # Evaluating the Reproducibility of LLMs in Data Science
 
+![Alt text](Figures/human_in_loop_overview.png)
+
 ## Overview
-To be added.
+To be added
+![Alt text](Figures/framework_overview.png)
 
 ## Environment Setup
 ### Downloading Data
