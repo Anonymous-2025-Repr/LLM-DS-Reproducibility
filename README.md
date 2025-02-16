@@ -31,7 +31,7 @@ In the current folder, execute the script to download DiscoveryBench, QRData, an
 1. Set Up the [Ollama](https://ollama.com/) Environment.
 2. Edit the `/config/api_config.json` file and insert your host information (for example `http://127.0.0.1:11434`).
 
-## Run Experiments
+## Experiments
 Execute the following command, replacing the placeholders as needed:
 ```
 python -m experiments.run_experiment --dataset_name {dataset_name} --model_name {model_name} --agent_type {agent_type} --overwrite
