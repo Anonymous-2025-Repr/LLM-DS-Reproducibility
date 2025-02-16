@@ -1,5 +1,5 @@
-# Evaluating the Reproducibility of LLMs in Data Science
-Official repository for the paper [to be added]
+# An Analyst-Inspector Framework for Evaluating Reproducibility of LLMs in Data Science
+Official repository for the paper ''_An Analyst-Inspector Framework for Evaluating Reproducibility of LLMs in Data Science_''
 ![Alt text](Figures/human_in_loop_overview.png)
 
 ## Overview
