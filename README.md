@@ -60,8 +60,8 @@ The result file will contain both the accuracy and reproducibility metrics.
   - `0`: Inaccurate
 2. Reproducibility:
   - `1`: Reproducible  
-  - `0`: Irreproducible (reproduciblity=0 with executable code)  
-  - `-1`: Irreproducible (reproduciblity=0 with non-executable code)
+  - `0`: Irreproducible (reproduciblity=0 with executable code in the paper)  
+  - `-1`: Irreproducible (reproduciblity=0 with inexecutable code in the paper)
 
 ## Citation
 To be added.
